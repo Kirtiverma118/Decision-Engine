@@ -56,6 +56,7 @@ For this task, I implemented the complete Decision Engine module end-to-end:
 5.Wrote and ran the test suite:
 
 -tests/test_transitions.py — unit tests covering every individual transition (high score, low score, borderline, inconsistent signals, missing context fields, determinism check).
+
 -tests/test_simulations.py — simulation tests that run full multi-question interview flows (strong candidate, weak candidate, borderline candidate, mixed realistic flow, long interview, inconsistent scores) to confirm the engine behaves correctly across an entire conversation, not just one call.
 
 6.Tested the API manually — ran the Flask server locally and verified the /decide endpoint with sample requests to confirm the response format matched the required {"action": "..."} structure.
