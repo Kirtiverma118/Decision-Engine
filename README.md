@@ -39,7 +39,7 @@ end_interview - Conclude the interview
 For this task, I implemented the complete Decision Engine module end-to-end:
 
 
-1. Designed the decision logic — I defined a set of fixed thresholds (high score, low score, borderline range, max follow-ups per topic, max total questions) and wrote the rule-based function decide_next_action() in src/decision_engine.py that takes a score and context as input and returns one of next_question, follow_up, or end_interview.
+1.Designed the decision logic — I defined a set of fixed thresholds (high score, low score, borderline range, max follow-ups per topic, max total questions) and wrote the rule-based function decide_next_action() in src/decision_engine.py that takes a score and context as input and returns one of next_question, follow_up, or end_interview.
 
 2.Handled the required edge cases:
 
