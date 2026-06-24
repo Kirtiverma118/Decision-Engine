@@ -44,7 +44,9 @@ For this task, I implemented the complete Decision Engine module end-to-end:
 2.Handled the required edge cases:
 
 -Borderline scores (4.0–7.0) — handled with a dedicated rule that defaults to a confirming follow_up unless the follow-up limit on that topic is already reached.
+
 -Inconsistent evaluation signals — I added a check that looks at the spread between the last few scores; if the spread is 5 or more points, the signals are treated as inconsistent and the engine plays it safe with a follow_up instead of guessing.
+
 -No random decisions — the entire function is deterministic (no random() anywhere); the same score + context will always produce the same action.
 
 3.Built the API endpoint — I wrapped the decision logic in a Flask app (api/endpoint.py) with a POST /decide route that accepts JSON input (score + context) and returns the decided action as JSON, plus a basic health-check route.
