@@ -69,22 +69,6 @@ The decision logic must be robust enough to handle real-world messiness, includi
 - Inconsistent evaluation signals — sometimes different evaluation signals may contradict each other; the engine should resolve this sensibly rather than breaking.
 - No random decisions — the same input (score + context) should reliably lead to the same decision. The logic must be deterministic and rule-based, not arbitrary or random.
 
-## 📂 Project Structure
-
-decision-engine/
-├── README.md
-├── requirements.txt
-├── docs/
-│   └── decision-rules.md        # Full decision rules explained
-├── src/
-│   └── decision_engine.py       # Core decision logic
-├── api/
-│   └── endpoint.py              # Flask API endpoint
-└── tests/
-    ├── test_transitions.py      # Unit tests for all transitions
-    └── test_simulations.py      # Simulation tests for multiple flows
-
-
 ✅ Deliverables
 
 By the end of this task, the following must be completed:
